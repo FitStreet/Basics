@@ -20,6 +20,17 @@
 #         lst_1.append(i)
 # print(lst_1)        
 
+<<<<<<< HEAD
+"logical operators"
+#task 11
+num = int(input())
+if not chr(num).isalpha():
+    print(f"Это не буква, а символ \"{chr(num)}\"")
+else:
+    print(f"Это буква \"{chr(num)}\"")
+
+
+=======
 # "logical operators"
 # #task 11
 # num = int(input())
@@ -49,3 +60,5 @@
 # print(last_names)
 
 
+
+>>>>>>> b05c594fda55d18c5fb7961c982dbcbb892ebffb
