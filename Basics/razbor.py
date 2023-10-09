@@ -13,9 +13,52 @@
 # for i in list_:
 #     print(i)
 
-lst = ['hello', 1, 2, 3, 6, 8, 'fgh', False, None]
-lst_1 = []
-for i in lst:
-    if type(i) == int:
-        lst_1.append(i)
-print(lst_1)        
+# lst = ['hello', 1, 2, 3, 6, 8, 'fgh', False, None]
+# lst_1 = []
+# for i in lst:
+#     if type(i) == int:
+#         lst_1.append(i)
+# print(lst_1)        
+
+<<<<<<< HEAD
+"logical operators"
+#task 11
+num = int(input())
+if not chr(num).isalpha():
+    print(f"Это не буква, а символ \"{chr(num)}\"")
+else:
+    print(f"Это буква \"{chr(num)}\"")
+
+
+=======
+# "logical operators"
+# #task 11
+# num = int(input())
+# if not chr(num).isalpha():
+#     print(f"Это не буква, а символ \"{chr(num)}\"")
+# else:
+#     print(f"Это буква \"{chr(num)}\"")
+
+
+"Lists"
+# Task 18
+
+# last_names = []
+
+# last_name = input().split()[-1] # ['ertay', 'esenbekov']
+# last_names.append(last_name)
+# last_name = input().split()[-1] # ['ertay', 'esenbekov']
+# last_names.append(last_name)
+# last_name = input().split()[-1] # ['ertay', 'esenbekov']
+# last_names.append(last_name)
+# last_name = input().split()[-1] # ['ertay', 'esenbekov']
+# last_names.append(last_name)
+# last_name = input().split()[-1] # ['ertay', 'esenbekov']
+# last_names.append(last_name)
+
+# last_names.sort()
+# print(last_names)
+
+
+
+>>>>>>> b05c594fda55d18c5fb7961c982dbcbb892ebffb
