@@ -122,15 +122,16 @@ play = True
 while play:
     name = input("Введите свое имя:  ")
     password = input('Введите свой пароль: ')
+
+    user_found = False
     for human in mary:
-        if human.get('name').lower() == name.lower():
-            if password == human.get("password"):
+        if human.get('name').lower() == name.lower() and password == human.get("password"):
                 print("успешно залогинились")
+                user_found = True
                 break
-            else:
-                print("Пароли не совпадают")
-    else:
-        print("Пользователь не найден")
+            
+    if not user_found:
+        print("Пользователь не найден или пароль не верный")
         
         
         
