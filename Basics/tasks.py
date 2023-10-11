@@ -42,3 +42,36 @@
 # ingredients.add("сыр моцарелла")
 
 # print(ingredients)
+
+
+# a = [set(), set(), set()]
+
+# inp1 = 'Hello world'
+# inp2 = 3
+# if inp2 == 1:
+#     a[0].add(inp1)
+# else:
+#     a[0].add("default value")
+
+# if inp2 == 2:
+#     a[1].add(inp1)
+# else:
+#     a[1].add("default value")
+
+# if inp2 == 3:
+#     a[2].add(inp1)
+# else:
+#     a[2].add("default value")
+# print(a)
+
+# set1 = {i for i in range(10) if i % 2 == 0}
+# set1 = {i for i in range(0,10,2)}
+# set2 = {i for i in range(1,10,2)}
+# print(set1)
+# if set1.intersection(set2):
+#     print("Множества пересекаются!")
+# else:
+#     print("Множества не пересекаются!")
+    
+
+    
