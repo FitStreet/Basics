@@ -75,5 +75,36 @@
     
 
 "============================Comprehensions================"
+# dict_ = {k:k**2 for k in range(1,11)}
+# print(dict_)
 
-    
+"task 11"
+# a = {'a': 1, 'b': 5, 'c': 4, 'd': 3}
+# dict_ = {k:[v for v in range(1,v+1)] for k,v in a.items()}
+# print(dict_)
+
+"task 13"
+# string_ = 'In 1984 there were 13 instances of a protest with over 1000 people attending'
+# list_ = [i for i in string_.split(" ") if i.isdigit() ]
+# print(list_)
+
+"task 14"
+# dict_ = {'Timur': {'history': 90, 'math': 95, 'literature': 91},
+ 
+# 'Olga': {'history': 92, 'math': 96, 'literature': 81},
+ 
+#  'Nik': {'history': 84, 'math': 85, 'literature': 87}}
+
+# result_dict = {student: max(subjects, key=subjects.get) for student, subjects in dict_.items()}
+
+# print(result_dict)
+
+"task 15"
+# my_dict = {'first': {'a': 1}, 'second': {'b': 2}} 
+# dict_ = {k:int(list({val for val in v.values()})[0])for k,v in my_dict.items()}
+# print(dict_)
+
+
+
+
+
