@@ -104,7 +104,91 @@
 # dict_ = {k:int(list({val for val in v.values()})[0])for k,v in my_dict.items()}
 # print(dict_)
 
+"task 26"
+# dict_ = {'a': {'d': 3, 'e': 45}, 'b': {'f': 23, 'j': 9}, 'c': {'h': 12, 'i': 89}}
+# list_ = [i for v in dict_.values() for i in v.values()]
+# print(list_)
 
+"task 28"
+# dict_ = {"Sedan": 1500, "SUV": 2000, "Pickup": 2500, "Miivan": 1600, "Vann": 2400, "Semi": 13600, "Bicycle": 7, "Motorcycle": 110}
 
+# list_ = [k.upper() for k,v in dict_.items() if 200 <= v <= 5000]
 
+# print(list_)
+
+"task 29"
+# dict1 = {"Sedan": 1500, "SUV": 2000, "Pickup": 2500, "Miivan": 1600, "Vann": 2400, "Semi": 13600, "Bicycle": 7, "Motorcycle": 110}
+
+# dict2 = {k.replace("i",""):k.count('i') for k,v in dict1.items()}
+# print(dict2)
+
+"task 30"
+# list1 = [1, 2, 3, 0, None, 'a', 'abc', [], 23, [1, 2, 3, 4], '', {'a': 1, 'b': 2}, 'drf', []]
+# a = [0, None, [], {}, '']
+# list2 = [i for i in list1 if i not in a]
+# print(list2)
+
+SPL_Patrons = [
+['Kim Tremblay', 134],
+['Emily Wilson', 42],
+['Jessica Smith', 215],
+['Alex Roy', 151],
+['Sarah Khan', 105],
+['Samuel Lee', 220],
+['William Brown', 24],
+['Ayesha Qureshi', 199],
+['David Martin', 56],
+['Ajeet Patel',69]
+]
+
+'task 31'
+# list1 = [k for i in SPL_Patrons for k in i if type(k) == str and i[1] > 100 ]
+# print(list1)
+
+"task 32"
+# sved_amount = [round(i[1] * 11.95, 2) for i in SPL_Patrons]
+# print(sved_amount)
+
+"task 33"
+# prairie_pirates = [
+# ['Tractor Jack', 1000, True],
+# ['Plowshare Pete', 950, False],
+# ['Prairie Lily', 245, True],
+# ['Red River Rosie', 350, True],
+# ['Mad Athabasca McArthur', 842, False],
+# ['Assiniboine Sally', 620, True],
+# ['Thresher Tom', 150, True],
+# ['Cranky Canola Carl', 499, False]
+# ]
+
+# pirat = [[i[0],i[1] * 42] for i in prairie_pirates if i[2] == True]
+# print(pirat)
+
+dict_ = {
+    'Sasha': {
+        'likes': 23,
+        'comments': 2,
+        'rating': 4
+    },
+    'Aliya': {
+        'likes': 34,
+        'comments': 5,
+        'rating': 5
+    },
+    'Dasha': {
+        'likes': 15,
+        'comments': 3,
+        'rating': 2
+    },
+    'Luna': {
+        'likes': 12,
+        'comments': 2,
+        'rating': 1
+    },
+    'Rena': {
+        'likes': 26,
+        'comments': 7,
+        'rating': 2
+    }
+}
 
