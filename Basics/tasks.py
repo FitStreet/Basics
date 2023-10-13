@@ -207,4 +207,25 @@
 # except ZeroDivisionError:
 #     print("Произошла ошибка!")
 
+# try:
+#     cash = int(input())
+#     if cash < 0:
+#         raise ValueError("Сумма не может быть отрицательной!")
+#     else:
+#         print(cash)
+# except ValueError as e:
+#     print(e)
+
+try:
+    age = int(input())
+    if age < 18:
+        raise ValueError("Доступ запрещен")
+except ValueError:
+    print("Введен некорректый возраст")
+
+
+
+
+
+
 
