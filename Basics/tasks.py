@@ -128,18 +128,18 @@
 # list2 = [i for i in list1 if i not in a]
 # print(list2)
 
-SPL_Patrons = [
-['Kim Tremblay', 134],
-['Emily Wilson', 42],
-['Jessica Smith', 215],
-['Alex Roy', 151],
-['Sarah Khan', 105],
-['Samuel Lee', 220],
-['William Brown', 24],
-['Ayesha Qureshi', 199],
-['David Martin', 56],
-['Ajeet Patel',69]
-]
+# SPL_Patrons = [
+# ['Kim Tremblay', 134],
+# ['Emily Wilson', 42],
+# ['Jessica Smith', 215],
+# ['Alex Roy', 151],
+# ['Sarah Khan', 105],
+# ['Samuel Lee', 220],
+# ['William Brown', 24],
+# ['Ayesha Qureshi', 199],
+# ['David Martin', 56],
+# ['Ajeet Patel',69]
+# ]
 
 'task 31'
 # list1 = [k for i in SPL_Patrons for k in i if type(k) == str and i[1] > 100 ]
@@ -164,31 +164,47 @@ SPL_Patrons = [
 # pirat = [[i[0],i[1] * 42] for i in prairie_pirates if i[2] == True]
 # print(pirat)
 
-dict_ = {
-    'Sasha': {
-        'likes': 23,
-        'comments': 2,
-        'rating': 4
-    },
-    'Aliya': {
-        'likes': 34,
-        'comments': 5,
-        'rating': 5
-    },
-    'Dasha': {
-        'likes': 15,
-        'comments': 3,
-        'rating': 2
-    },
-    'Luna': {
-        'likes': 12,
-        'comments': 2,
-        'rating': 1
-    },
-    'Rena': {
-        'likes': 26,
-        'comments': 7,
-        'rating': 2
-    }
-}
+# dict_ = {
+#     'Sasha': {
+#         'likes': 23,
+#         'comments': 2,
+#         'rating': 4
+#     },
+#     'Aliya': {
+#         'likes': 34,
+#         'comments': 5,
+#         'rating': 5
+#     },
+#     'Dasha': {
+#         'likes': 15,
+#         'comments': 3,
+#         'rating': 2
+#     },
+#     'Luna': {
+#         'likes': 12,
+#         'comments': 2,
+#         'rating': 1
+#     },
+#     'Rena': {
+#         'likes': 26,
+#         'comments': 7,
+#         'rating': 2
+#     }
+# }
+# list_ = [1, 4, 9, 16, 25, 36] 
+# try:
+#     print(list_[27])
+# except IndexError:
+#     print("Нет такого элемента!")
+
+
+# try:
+#     num1 = int(input())
+#     num2 = int(input())
+#     print(num1/num2)
+# except ValueError:
+#     print("Произошла ошибка!")
+# except ZeroDivisionError:
+#     print("Произошла ошибка!")
+
 
