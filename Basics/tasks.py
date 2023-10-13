@@ -216,14 +216,51 @@
 # except ValueError as e:
 #     print(e)
 
-try:
-    age = int(input())
-    if age < 18:
-        raise ValueError("Доступ запрещен")
-except ValueError:
-    print("Введен некорректый возраст")
+# try:
+#     age = int(input())
+#     if age < 18:
+#         raise ValueError("Доступ запрещён")
+# except ValueError:
+#     print("Введен некорректный возраст")
+# else:
+#     print("Спасибо")
+# finally:
+#     print("До свидания!")
 
+# dict_ = {
+#     'Sasha': {
+#         'likes': 23,
+#         'comments': 2,
+#         'rating': 4
+#     },
+#     'Aliya': {
+#         'likes': 34,
+#         'comments': 5,
+#         'rating': 5
+#     },
+#     'Dasha': {
+#         'likes': 15,
+#         'comments': 3,
+#         'rating': 2
+#     },
+#     'Luna': {
+#         'likes': 12,
+#         'comments': 2,
+#         'rating': 1
+#     },
+#     'Rena': {
+#         'likes': 26,
+#         'comments': 7,
+#         'rating': 2
+#     }
+# }
 
+# dict_ = sum([like for v in dict_.values() for key,like in v.items() if v["rating"] > 3 and key == "likes"])
+# print(dict_)
+
+# list_name = ['paul', 'john', 'george', 'ringo', 'eric', 'patty', 'yoko', 'cynthia', 'linda', 'jude' ] 
+# dict_ = {i:len(i)**2 for i in list_name if len(i) > 4} 
+# print(dict_)
 
 
 
