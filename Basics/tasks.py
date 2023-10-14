@@ -411,20 +411,6 @@
 # result = collect_all_possibles(list_, num)
 # print(result)
 
-def filter_comment(comment: str, banlist=[]) -> None:
-    comment = comment.lower().split(" ")
-
-    for i in comment:
-        for j in i:
-            if j in "!?,.":
-                j = j.remove()
-        print(i)
-                
-    
-    for word in comment:
-        if word in banlist:
-            raise ValueError("Ваш комментарий отправлен на перепроверку, так как, возможно, содержит неблагоприятный контекст")
-print(filter_comment('Hello, world', ['hello']))
 
     
     
