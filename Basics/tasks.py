@@ -262,7 +262,170 @@
 # dict_ = {i:len(i)**2 for i in list_name if len(i) > 4} 
 # print(dict_)
 
+# dict_ = {
+#     'Dasha': {
+#         'likes': 15,
+#         'comments': [
+#             {'id': 1, 'text': 'some text'},
+#             {'id': 2, 'text': 'some text'},
+#         ],
+#         'rating': 2
+#     },
+#     'Luna': {
+#         'likes': 12,
+#         'comments': [
+#             {'id': 1, 'text': 'some text'},
+#             {'id': 2, 'text': 'some text'},
+#             {'id': 3, 'text': 'some text'},
+#         ],
+#         'rating': 1
+#     },
+#     'Rena': {
+#         'likes': 26,
+#         'comments': [
+#             {'id': 1, 'text': 'some text'},
+#             {'id': 2, 'text': 'some text'},
+#             {'id': 3, 'text': 'some text'},
+#             {'id': 4, 'text': 'some text'},
+#             {'id': 5, 'text': 'some text'},
+#             {'id': 6, 'text': 'some text'},
+#         ],
+#         'rating': 2
+#     }
+# }
 
+# comment_ids = [comment['id'] for user_data in dict_.values() for key, val in user_data.items() if key == "comments" and len(val) > 3 for comment in val]
+# print(comment_ids)
 
+# list_ = [i/2 for i in range(11) if i % 2 == 0]
+# print(list_)
 
+# dict_ = {1:"asd", 2: "fgha", 3: "treas"}
+# dict_ = {k:len(v) if k % 2 == 0 else len(v)**3 for k,v in dict_.items()}
+# print(dict_)
 
+# import random
+
+# set1 = {random.randint(0, 20) for _ in range(11)}
+# set2 = {random.randint(10, 30) for _ in range(11)}
+
+# full_set = set1 | set2
+
+# full_set_length = len(full_set)
+
+# duplicates = 20 - full_set_length
+# print(set1)
+# print(set2)
+
+# if duplicates > 0:
+#     print(f"В этом сете было {duplicates} повторения, его длина составляет {full_set_length}")
+# else:
+#     print("Ваш объединенный сет полностью уникальный!")
+
+# list_ = [1, 2, 3]
+# try:
+#     list_.get(1,2)
+# except AttributeError:
+#     print("Так нельзя!"
+
+# try:
+#     string = "asdf"
+#     num = 1
+#     print(string + num)
+# except TypeError:
+#     print("usupported option")
+# try:
+#     for i in range(11):
+#         list_.append(i)
+# except NameError:
+#     print("нет такой переменной")
+# try:
+#     list_ = [1, 2, 3, 4]
+#     for i in range(0, len(list_) + 1):
+#         print(list_[i])
+# except IndexError:
+#     print("index out of range")
+
+# password = "Stdv"
+
+# if len(password) < 6:
+#     raise ValueError("Wrong password")
+
+# warehouse = [
+#     ['1', '2', '3'],
+#     [1, 2],
+#     [[1], [2], [3]],
+#     [[1, 2, 3], [1, 2, 3, 4, 5], {'hello': 'world'}],
+# ]
+# if len(warehouse) > 10:
+#     raise ValueError("много коробок")
+# for i in warehouse:
+#     if len(i) > 3:
+#         raise ValueError("ytn vtcnf d rjhj,rt")
+
+# def to_fahrenheit(k:int) -> float:
+#     assert k >= 0, "Холоднее абсолютного нуля!"
+#     return (k-273.15)*1.8 +32
+
+# try:
+#     import lamabimgo
+# except ModuleNotFoundError:
+#     print("Такого модуля нет!")
+
+# def filter_comment(comment: str, banlist=[]) -> None:
+#     new_comment = comment.split(" ")
+#     for i in new_comment:
+#         if i in banlist:
+#             raise ValueError("Ваш комментарий отправлен на перепроверку, так как, возможно, содержит неблагоприятный контекст")
+
+# def collect_all_possibles(list_, num):
+#     possible_results = []
+
+#     for item in list_:
+       
+#         if isinstance(item, (int, float)):
+#             add_result = num + item
+#             subtract_result = item - num
+#             multiply_result = num * item
+#             divide_result = item // num if item != 0 else None  # 
+#             exponent_result = num ** item
+#             possible_results.extend([add_result, subtract_result, multiply_result, divide_result, exponent_result])
+#         elif isinstance(item, str):
+           
+#             string_result = item * num
+#             possible_results.append(string_result)
+#         elif isinstance(item, list):
+            
+#             list_result = item * num
+#             possible_results.append(list_result)
+
+#     return possible_results
+
+# # Пример использования функции
+# list_ = [
+#     'hello',
+#     6, 
+#     [1, 2, 3]
+# ]
+# num = 2
+# result = collect_all_possibles(list_, num)
+# print(result)
+
+def filter_comment(comment: str, banlist=[]) -> None:
+    comment = comment.lower().split(" ")
+
+    for i in comment:
+        for j in i:
+            if j in "!?,.":
+                j = j.remove()
+        print(i)
+                
+    
+    for word in comment:
+        if word in banlist:
+            raise ValueError("Ваш комментарий отправлен на перепроверку, так как, возможно, содержит неблагоприятный контекст")
+print(filter_comment('Hello, world', ['hello']))
+
+    
+    
+        
