@@ -197,7 +197,7 @@ def delete(lst,index):
 
 
         
-create([{'title': 'Coffee', 'price': 50, 'category': 'Grocery'}, {'title': 'title', 'price': 233, 'category': 'category'}], Prrrr, 233, PAPI)    
+create([{'title': 'Coffee', 'price': 50, 'category': 'Grocery'}, {'title': 'title', 'price': 233, 'category': 'category'}])    
 create(database, "silvia", 300, "cars")
 read(database)
 create(database, "s2000", 200, "cars" )
