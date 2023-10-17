@@ -73,11 +73,11 @@
 # # print(func(a=5, 4)) # SyntaxError: positional argument follows keyword argument
 # print(func(4))
 
-def rev(string:str) -> str:
-    """
-    This func reverse string
-    """
-    return string[::-1]
+# def rev(string:str) -> str:
+#     """
+#     This func reverse string
+#     """
+#     return string[::-1]
 
 # print(rev('hello')) #olleh
 
