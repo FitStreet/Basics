@@ -24,7 +24,7 @@
 # result = list(filter(lambda x: len(x) > 7, list_ ))
 # print(result)
 """Task 7"""
-list_ = [5, 6, 7, 8] 
-import functools
-result = functools.reduce(lambda x,y: x*y,list_)
-print(result)
+# list_ = [5, 6, 7, 8] 
+# import functools
+# result = functools.reduce(lambda x,y: x*y,list_)
+# print(result)
