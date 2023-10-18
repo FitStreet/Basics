@@ -78,9 +78,9 @@
 #     return b
 
 # print(title())
-glas = "еаоэяиюёу"
-znak = ""
+# glas = "еаоэяиюёу"
+# znak = ""
 
-def count_symbols(string):
+# def count_symbols(string):
 
 
