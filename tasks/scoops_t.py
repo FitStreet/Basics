@@ -78,9 +78,36 @@
 #     return b
 
 # print(title())
-# glas = "еаоэяиюёу"
-# znak = ""
+
+# glas = "еаоэяиюёуы"
+# znak = """,.!?'" """
 
 # def count_symbols(string):
+#     glas_b = 0
+#     sogl_b = 0
+#     symbol = 0
+#     for i in string.lower():
+#         if i in glas:
+#             glas_b += 1
+#         elif i in znak:
+#             symbol += 1
+#         elif i in 'бвгджзйклмнпрстфхцчшщ':
+#             sogl_b += 1
 
+#     return f"Количество гласных: {glas_b}, согласных: {sogl_b}, остальных символов: {symbol}"
 
+# print(count_symbols('Тёстывая строкю'))
+
+# a = []
+# def func():
+#     # global a
+#     a = [i for i in range(11)]
+#     return a
+
+# print(func())
+
+# a = [1, 3, 4, 6, 8, 6, 8, 9, 0, 3]
+# def lower_7():
+#     b = [i for i in a if i < 7]
+#     return b
+# print(lower_7())

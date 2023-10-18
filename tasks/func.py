@@ -55,7 +55,7 @@
 #                 lst1.append(i.get('name'))
 #     for i in set(lst1):
 #         print(f"{i}, скидки в магазин компьютерной техники!")
-# func15(user)
+# func15(users)
 
 # def func15(users)
 #     it_professionals = [user['name'] for user in users if 'IT' in user['work']]
@@ -180,47 +180,44 @@
 
 # print(spent("sock", 100, balance))
 
-database = []
-def create(lst, title, price, category):
-    lst.append({"title": title, "price": price, "category": category})
-    return lst
+# database = []
+# def create(lst, title, price, category):
+#     lst.append({"title": title, "price": price, "category": category})
+#     return lst
 
-def read(lst):
-    print(lst)
+# def read(lst):
+#     print(lst)
 
-def update(lst, index, title, price, category):
-    lst[index] = {"title": title, "price": price, "category": category}
-    return lst
-def delete(lst,index):
-    del lst[index]
-    return lst
+# def update(lst, index, title, price, category):
+#     lst[index] = {"title": title, "price": price, "category": category}
+#     return lst
+# def delete(lst,index):
+#     del lst[index]
+#     return lst
+   
+# create(database, "silvia", 300, "cars")
+# read(database)
+# create(database, "s2000", 200, "cars" )
+# read(database)
+# create(database, "pip", 200, "list")
+# read(database)
+# update(database, 1, "mork", 300, "pork")
+# read(database)
+# delete(database, 0)
+# read(database)
 
-
-        
-create([{'title': 'Coffee', 'price': 50, 'category': 'Grocery'}, {'title': 'title', 'price': 233, 'category': 'category'}])    
-create(database, "silvia", 300, "cars")
-read(database)
-create(database, "s2000", 200, "cars" )
-read(database)
-create(database, "pip", 200, "list")
-read(database)
-update(database, 1, "mork", 300, "pork")
-read(database)
-delete(database, 0)
-read(database)
-
-database=list() 
-def create(db:list,title:str,price:int,category:str)->list: 
-    db.append({'title':title,'price':price,'category':category}) 
-    return db 
-def read(db:list)->list: 
-    print(db) 
-    return db 
-def update(db:list,index:int,title:str,price:int,category:str)->list:
-    db[index]['title']=title 
-    db[index]['price']=price 
-    db[index]['category']=category 
-    return db 
-def delete(db,index): 
-    db.pop(index) 
-    return db
+# database=list() 
+# def create(db:list,title:str,price:int,category:str)->list: 
+#     db.append({'title':title,'price':price,'category':category}) 
+#     return db 
+# def read(db:list)->list: 
+#     print(db) 
+#     return db 
+# def update(db:list,index:int,title:str,price:int,category:str)->list:
+#     db[index]['title']=title 
+#     db[index]['price']=price 
+#     db[index]['category']=category 
+#     return db 
+# def delete(db,index): 
+#     db.pop(index) 
+#     return db
