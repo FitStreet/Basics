@@ -46,9 +46,9 @@
 
 # reduce - принимает функцию с двумя аргументами и последовательность, возвращает результат полученный из двух аргументов
 
-from functools import reduce
+# from functools import reduce
 
-list1 = [1,2,4,5,6]
+# list1 = [1,2,4,5,6]
 # def func(x,y):
 #     print(x,y)
 #     return x+y
