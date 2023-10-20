@@ -49,23 +49,23 @@
 #     # print(x)
 #     return x
 
-def add_bread(func):
-    def wrapper_bread(*args):
+# def add_bread(func):
+#     def wrapper_bread(*args):
 
-        return f"хлеб {func(*args)} хлеб"
-    return wrapper_bread
+#         return f"хлеб {func(*args)} хлеб"
+#     return wrapper_bread
 
-def add_ingredients(func):
-    def wrapper_ingredients(*args):
+# def add_ingredients(func):
+#     def wrapper_ingredients(*args):
 
-        return f"помидор {func(*args)} салат"
-    return wrapper_ingredients
+#         return f"помидор {func(*args)} салат"
+#     return wrapper_ingredients
 
-# @add_bread
-# @add_ingredients
-def get_sandwitch(x):
-    # print(x)
-    return x
+# # @add_bread
+# # @add_ingredients
+# def get_sandwitch(x):
+#     # print(x)
+    # return x
 
 # print(get_sandwitch("сосиска"))
 
@@ -76,10 +76,10 @@ def get_sandwitch(x):
 # 4. wrapper_ingredients(get_sandwich)
 # 5.    
 
-result = add_bread(add_ingredients(get_sandwitch))
-print(result("сосиска"))
+# result = add_bread(add_ingredients(get_sandwitch))
+# print(result("сосиска"))
 
-"хлеб помидор сосиска салат хлеб"
+# "хлеб помидор сосиска салат хлеб"
 
 
 
