@@ -63,12 +63,6 @@
 # list1 = reduce(lambda x,y: x if x>y else y,list1)
 # print(list1)
 
-"""
-#itertools
-# collections
-# YAGNI Your Are Not Gonna Need It
 
-# all, any, sorted, key, 
-"""
 
 
