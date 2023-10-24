@@ -53,3 +53,31 @@
 #         list_.append(int(i))
 #     elif i.isalpha():    
 #          raise ValueError('Данный элемент не является числом!')
+
+
+# lst = ['a',"b","c"]
+# print(lst * 3)
+
+# a = 1,2,3
+# b = 1,2,3
+# print(a+b)
+# print(type(a+b))
+
+# a1 = (1,2,3,4,3,3,3,3,3,3,3)
+# print(a1)
+
+# def fact(n):
+#     res = 1
+#     for i in range(1,n+1):
+#         res *= i
+#     return res
+
+# print(fact(3))
+# print(fact(5))
+
+x = 2
+def check():
+    x = x*2
+    print(x)
+
+check()
