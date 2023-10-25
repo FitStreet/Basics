@@ -28,6 +28,13 @@
 # import functools
 # result = functools.reduce(lambda x,y: x*y,list_)
 # print(result)
+"""Task 8"""
+# list_ = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] 
+# list2 = list(filter(lambda x : x % 2 == 0 ,list_))
+# list3 = list(filter(lambda x : x % 2 != 0, list_))
+
+# result = f"even: {len(list2)}, odd: {len(list3)}"
+# print(result)
 """Task 9"""
 # list_ = [-1, 2, 3, 5, -3, 7] 
 # result = list(map(lambda x: x > 0, list_))
@@ -58,6 +65,33 @@
 # list_ = [-7, -2, 12, 32, 432, 23, 37, 11, 76, 0, -23, 45, -32, -56]
 # print(list(abs(i) for i in list_))
 """16"""
-list_ = ['hello', 123]
-result = list(map(lambda x: type(x), list_))
-print(result)
+# list_ = ['hello', 123]
+# result = list(map(lambda x: type(x), list_))
+# print(result)
+"""17"""
+# names = ['rauchel','john','peter','jessica','steven123','dandy34','kamest','potter']
+# names = list(map(lambda x :f"{x} Python" if len(x) >= 5 else f" {x} JavaScript", names))
+# print(names)
+"""Task 18"""
+# list_ = ['123hello@gmail.com', '123', 'hello', "saf@gmail.comafesaf"]
+# new_list = list(map(lambda x: x if x.endswith("@gmail.com") else "Not valid email", list_))
+# print(new_list)
+"""Task 19"""
+# string = 'hello'
+# n_str = tuple(enumerate(string,1))
+# print(n_str)
+"""Task 20"""
+# list1 = ['M', 'A', 'K', 'E', 'R', 'S'] 
+# list2 = [236, 54, 33, 21, 89, 1]
+# list3 = list(zip(list1,list2))
+# print(list3)
+"""Task 21"""
+# list_ = [-7, -2, 12, 32, 432, 23, 37, 11, 76, 0, -23, 45, -32, -56]
+# list2 = list(filter(lambda x: x > 0, list_))
+# list3 = list(filter(lambda x: x <= 0, list_))
+# list4 = list(zip(list2,list3))
+# print(list4) # интересно почему 0 в отрицательных числах
+"""Task 22"""
+# list_ = [0.334, 23.3443, 43.4, -13.44, 22.03, -11.033, 267.993, -3.24]
+# list2 = list(map(lambda x: round(x ** 2,3),list_))
+# print(list2)

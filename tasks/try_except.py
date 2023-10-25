@@ -75,10 +75,11 @@
 # print(fact(3))
 # print(fact(5))
 
-x = 2
-def check():
-    x = x*2
-    print(x)
+# x = 2
+# def check():
+#     x = x*2
+#     print(x)
 
-check()
+# check()
 #asdsafadgdsagfad
+ 
