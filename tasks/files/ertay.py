@@ -123,16 +123,16 @@ with open(filename, 'w', newline='') as file:
 """
 
 """Task 10"""
-import csv
+# import csv
 
-def  read_csv(filename: str):
-    with open(filename, 'r', newline = '') as file:
-        data_dict = {}
-        reader = csv.reader(file)
-        for i in reader:
-            key = i[0]
-            values = i[1:]
-            data_dict[key] = values
-    return data_dict
+# def  read_csv(filename: str):
+#     with open(filename, 'r', newline = '') as file:
+#         data_dict = {}
+#         reader = csv.reader(file)
+#         for i in reader:
+#             key = i[0]
+#             values = i[1:]
+#             data_dict[key] = values
+#     return data_dict
 
-print(read_csv('data.csv'))
+# print(read_csv('data.csv'))
