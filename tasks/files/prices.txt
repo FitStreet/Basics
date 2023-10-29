@@ -1,0 +1,3 @@
+cola 4 50
+fanta 6 80
+sprite 3 75
