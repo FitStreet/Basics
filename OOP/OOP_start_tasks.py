@@ -277,8 +277,8 @@ print(obj_.result)
 # и чтобы смог показать его длину
 # 12345678
 
-iter_int = IterInt(12345678)
-for i in iter_int:
-    print(i)
+# iter_int = IterInt(12345678)
+# for i in iter_int:
+#     print(i)
 
-class 
+# class 
