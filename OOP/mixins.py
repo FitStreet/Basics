@@ -33,12 +33,12 @@ class FlyFish(SwimMixin, FlyMixin):
 
 # print(issubclass(FlyFish, FlyMixin)) # можно узнать наследуется ли класс
 flyfish = FlyFish()
-print(hasattr(flyfish, "name")) # проверяет находится ли name в flyfish(проверяет находится ли атрибт или метод в классе) True или False
+# print(hasattr(flyfish, "name")) # проверяет находится ли name в flyfish(проверяет находится ли атрибт или метод в классе) True или False
 
-print(getattr(flyfish, 'name')) # находит значение по имени атребута "flyfish"
-print(getattr(flyfish, 'nam', 'не найдено')) # не найдено
-print(setattr(flyfish, 'name', 5)) # изменяет значение атрибута по названию, если такого атрибута нет, создает его
-print(flyfish.__dict__) # выводит все переменные экземпляра класса в виде ключ-значение
+# print(getattr(flyfish, 'name')) # находит значение по имени атребута "flyfish"
+# print(getattr(flyfish, 'nam', 'не найдено')) # не найдено
+# print(setattr(flyfish, 'name', 5)) # изменяет значение атрибута по названию, если такого атрибута нет, создает его
+# print(flyfish.__dict__) # выводит все переменные экземпляра класса в виде ключ-значение
 
 #CRUD
 # create
@@ -95,8 +95,8 @@ class Human(CRUD):
         
     
 human = Human()
-human.born('Nikita', '27-11')
-print(human.show('NiKita'))
-human.update_name("Nikita", "Tima")
-print(human.show('Tima'))
-print(human.kill('Tima', "сбила машина и переродился в другом мире"))
+# human.born('Nikita', '27-11')
+# print(human.show('NiKita'))
+# human.update_name("Nikita", "Tima")
+# print(human.show('Tima'))
+# print(human.kill('Tima', "сбила машина и переродился в другом мире"))
