@@ -25,16 +25,25 @@ import json
 
 # with open('db1.json', "x") as file:
 #     json.dump(json_products, file, indent= 4)
-    
-def get_sorted(json_filename: str):
-    with open(json_filename) as file:
-        py_obj = json.load(file)
-        sorted_products = sorted(py_obj, key=lambda x: x.get('rating', 0), reverse=True)
-        for i in sorted_products:
-            print(i["title"])
+"""Task 10"""  
 
-    return sorted_products
+# def get_sorted(json_filename: str):
+#     with open(json_filename) as file:
+#         py_obj = json.load(file)
+#         sorted_products = sorted(py_obj, key=lambda x: x.get('rating', 0), reverse=True)
+#         for i in sorted_products:
+#             print(i["title"])
+
+#     return sorted_products
 
 
-get_sorted("db1.json")
+# get_sorted("db1.json")
+
+"""Task 9"""
+# def create_new(id: int, title: str, description: str, price: int, rating:float):
+#     new_dict = {"id": id, "title": "title", "description": "description", "price":price, "rating": rating}
+#     with open("db1.json", "a") as file:
+
+
+
 
