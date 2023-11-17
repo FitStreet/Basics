@@ -69,6 +69,7 @@ class Game:
         return self.__level
     
     @level.setter # позволяет изменить атрибут
+    #__setattr__ - 
     def level(self, n):
         self.__level = n
     
@@ -80,9 +81,9 @@ g = Game()
 # print(g._Game__level)
 # g._Game__level = 90
 # print(g._Game__level)
-print(g.level)
-g.level = 90
-print(g.level)
+# print(g.level)
+# g.level = 90
+# print(g.level)
 
 # property | getter
 
@@ -109,3 +110,85 @@ human = Human("name", 78, "last_name")
 # _create_user
 # create_user
 # create_superuser
+
+
+# class A:
+#     _a = 7
+    # getter - переопределяет маг. метод __getattribute__
+    # setter - переопределяет магюметод __setattr__
+    # deletter - переопределяет маг. метод __delattr__
+     
+
+# a = A()
+# print(a._a)
+# print(a.__getattribute__("_a"))
+# a._a = 5
+# "||"
+# a.__setattr__('_a', 5)
+# print(a.__getattribute__("_a"))
+# a.__setattr__("a", 6)
+# "||"
+# a.a = 10
+# a.__delattr__("a")
+# print(a.__getattribute__("a"))
+
+class Human:
+    def __init__(self,name) -> None:
+        self.__name = name
+    @property
+    def name(self):
+        return self.__name
+    
+    @name.deleter # срабатывает когда мы пишем оператор "del"
+    def name(self):
+        del self.__name
+
+# human = Human("Nikita")
+# del human.name
+# print(human.name)
+        
+
+class Temp:
+    
+    def __init__(self, target_temp) -> None:
+        self.__target_temp = target_temp
+        self.__default_temp = 10 
+        self.doiti_do_target_temp()
+
+    def add_temp(self):
+        self.__default_temp += 1
+        if self.__default_temp == self.__target_temp:
+            return "Вы достигли до плановой задачи"
+
+    def minus_temp(self):
+        self.__default_temp -= 1
+        if self.__default_temp == self.__target_temp:
+            return "Вы достигли до плановой задачи"
+    
+    def get_temp(self):
+        return f"{self.__default_temp} - {self.counter} вызвали метод {self.method}"
+
+    def doiti_do_target_temp(self):
+        self.counter = 0
+        if self.__default_temp < self.__target_temp:
+            while self.__default_temp != self.__target_temp:
+                self.add_temp()
+                self.method  = self.add_temp.__name__
+                self.counter += 1
+            
+        elif self.__default_temp > self.__target_temp:
+            while self.__default_temp != self.__target_temp:
+                self.minus_temp()
+                self.method = self.minus_temp.__name__
+                self.counter += 1
+        else:
+            self.counter = 0
+            self.method = "ни разу, температуры равны"
+
+temp = Temp(20)
+print(temp.get_temp())
+
+    
+
+        
+
