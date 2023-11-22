@@ -10,19 +10,19 @@
 
 """Task 2"""
 
-class Cat:
-    def voice(self):
-        print('Мяу')
+# class Cat:
+#     def voice(self):
+#         print('Мяу')
 
-class Dog:
-    def voice(self):
-        print('Гав')
+# class Dog:
+#     def voice(self):
+#         print('Гав')
 
-def to_pet(obj):
-    obj.voice()
+# def to_pet(obj):
+#     obj.voice()
 
-barsik = Cat()
-rex = Dog()
+# barsik = Cat()
+# rex = Dog()
 
 # to_pet(barsik) 
 # to_pet(rex) 
@@ -192,36 +192,36 @@ rex = Dog()
 
 """Task 8"""
 
-class Planet:
-    def __init__(self, orbit) -> None:
-        self.orbit = orbit
+# class Planet:
+#     def __init__(self, orbit) -> None:
+#         self.orbit = orbit
 
-class Venus(Planet):
+# class Venus(Planet):
 
-    def get_age(self, earth_age):
-        result = earth_age * 365 / self.orbit * 365
-        return f"на Венере ваш возраст составляет {int(result)} дней"
+#     def get_age(self, earth_age):
+#         result = earth_age * 365 / self.orbit * 365
+#         return f"на Венере ваш возраст составляет {int(result)} дней"
 
-class Mercury(Planet):
+# class Mercury(Planet):
 
 
-    def get_age(self, earth_age):
-        result = earth_age * 365 / self.orbit
-        return f"на Меркурии ваш возраст составляет {int(result)} лет"
+#     def get_age(self, earth_age):
+#         result = earth_age * 365 / self.orbit
+#         return f"на Меркурии ваш возраст составляет {int(result)} лет"
         
-class Jupiter(Planet):
+# class Jupiter(Planet):
 
 
-    def get_age(self, earth_age):
-        result = round(earth_age * 365 // self.orbit * 365 * 24)
-        return f"на Юпитере ваш возраст составляет {result} часов"
+#     def get_age(self, earth_age):
+#         result = round(earth_age * 365 // self.orbit * 365 * 24)
+#         return f"на Юпитере ваш возраст составляет {result} часов"
         
 
-v = Venus(225)
-print(v.get_age(17))
+# v = Venus(225)
+# print(v.get_age(17))
 
-j = Jupiter(12)
-print(j.get_age(23))
+# j = Jupiter(12)
+# print(j.get_age(23))
 
-m = Mercury(88)
-print(m.get_age(32))
+# m = Mercury(88)
+# print(m.get_age(32))
