@@ -142,7 +142,7 @@ class MoneyFmt:
     def dollarize(float_num):
         if float_num < 0:
             num = format(round(abs(float_num),3),",")
-            return f"-${num}0"
+            return f"-${num}"
         else:
             num =format(round(float_num,3),",")
             return f"${num}0" """
@@ -168,9 +168,3 @@ class MoneyFmt:
 # print(cash)
 # print(repr(cash)) 
 
-
-        
-
-
-    
-        

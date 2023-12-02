@@ -123,5 +123,4 @@ mystr = MyStr("nikita")
 mystr[3] = "tt"
 print(mystr)   
 
-
     
