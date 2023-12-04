@@ -7,7 +7,7 @@ db_params = {
     'host':'localhost',
     'database':'practice_psyco',
     'user':'fitstreet',
-    'password':'Stdvan1x'
+    'password':'Your Pssword here'
 }
 
 connection = psycopg2.connect(**db_params)
